@@ -1,6 +1,8 @@
 require('./config.js')
 const http = require('http')
 
-http.createServer(function(req, res){
+const server = http.createServer(function(req, res){
     res.end("Tamo aqui")
 })
+
+server.listen(process.env.PORT)
