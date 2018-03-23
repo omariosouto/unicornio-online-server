@@ -1,8 +1,19 @@
 require('./config.js')
-const http = require('http')
+const Express = require('express')
+const cors = require('cors')
+const bodyParser = require('body-parser')
+const app = new Express()
 
-const server = http.createServer(function(req, res){
-    res.end("Tamo aqui")
+app.use(bodyParser.json())
+app.use(cors())
+
+app.get('/', (req,res) => {
+    res.send('Alo alo, w brazil')
 })
 
-server.listen(process.env.PORT)
+app.post('/compiler', (req,res) => {
+    // res.status(201)
+    res.send(req.body)
+})
+
+app.listen(process.env.PORT)
