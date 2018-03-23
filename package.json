@@ -1,0 +1,24 @@
+{
+  "name": "unicornio-online-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server"
+    ,"test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omariosouto/unicornio-online-server.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omariosouto/unicornio-online-server/issues"
+  },
+  "homepage": "https://github.com/omariosouto/unicornio-online-server#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "universal-fetch": "^1.0.0"
+  }
+}
