@@ -1,4 +1,4 @@
-const SphereEngineSubmissionStatus = require('../status/SphereEngineSubmissionStatus.status')
+const SphereEngineSubmissionStatus = require('./SphereEngineSubmissionStatus.js')
 
 const BASE_URL = `http://${process.env.SPHERE_COMPILERS_ENDPOINT}/api/v3`
 const PARAM_ACCESS_TOKEN = `access_token=${process.env.SPHERE_COMPILERS_ACCESS_TOKEN}`
